@@ -13,6 +13,7 @@
 		CE246336285FBF02000B7F66 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE246335285FBF02000B7F66 /* Preview Assets.xcassets */; };
 		CE24633E285FBF66000B7F66 /* Maybelline.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE24633D285FBF66000B7F66 /* Maybelline.swift */; };
 		CE246341285FC4D0000B7F66 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE246340285FC4D0000B7F66 /* NetworkManager.swift */; };
+		CE246344285FCFB7000B7F66 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CE246343285FCFB7000B7F66 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE246344285FCFB7000B7F66 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +107,9 @@
 			dependencies = (
 			);
 			name = Maybelline;
+			packageProductDependencies = (
+				CE246343285FCFB7000B7F66 /* SDWebImageSwiftUI */,
+			);
 			productName = Maybelline;
 			productReference = CE24632B285FBEFF000B7F66 /* Maybelline.app */;
 			productType = "com.apple.product-type.application";
@@ -133,6 +138,9 @@
 				Base,
 			);
 			mainGroup = CE246322285FBEFF000B7F66;
+			packageReferences = (
+				CE246342285FCFB7000B7F66 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = CE24632C285FBEFF000B7F66 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -363,6 +371,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE246342285FCFB7000B7F66 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE246343285FCFB7000B7F66 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE246342285FCFB7000B7F66 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE246323285FBEFF000B7F66 /* Project object */;
 }
