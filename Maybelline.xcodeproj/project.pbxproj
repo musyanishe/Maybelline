@@ -12,6 +12,7 @@
 		CE246333285FBF02000B7F66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE246332285FBF02000B7F66 /* Assets.xcassets */; };
 		CE246336285FBF02000B7F66 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE246335285FBF02000B7F66 /* Preview Assets.xcassets */; };
 		CE24633E285FBF66000B7F66 /* Maybelline.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE24633D285FBF66000B7F66 /* Maybelline.swift */; };
+		CE246341285FC4D0000B7F66 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE246340285FC4D0000B7F66 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		CE246332285FBF02000B7F66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE246335285FBF02000B7F66 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE24633D285FBF66000B7F66 /* Maybelline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maybelline.swift; sourceTree = "<group>"; };
+		CE246340285FC4D0000B7F66 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,7 @@
 		CE246322285FBEFF000B7F66 = {
 			isa = PBXGroup;
 			children = (
+				CE24633F285FC4A6000B7F66 /* Services */,
 				CE24633C285FBF3E000B7F66 /* Models */,
 				CE24632D285FBEFF000B7F66 /* Maybelline */,
 				CE24632C285FBEFF000B7F66 /* Products */,
@@ -76,6 +79,14 @@
 				CE24633D285FBF66000B7F66 /* Maybelline.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CE24633F285FC4A6000B7F66 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE246340285FC4D0000B7F66 /* NetworkManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE246341285FC4D0000B7F66 /* NetworkManager.swift in Sources */,
 				CE246331285FBEFF000B7F66 /* ContentView.swift in Sources */,
 				CE24633E285FBF66000B7F66 /* Maybelline.swift in Sources */,
 				CE24632F285FBEFF000B7F66 /* MaybellineApp.swift in Sources */,
