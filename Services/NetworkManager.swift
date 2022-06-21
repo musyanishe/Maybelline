@@ -9,5 +9,24 @@ import Combine
 import Foundation
 
 class NetworkManager: ObservableObject {
+    @Published var maybelline = [Maybelline]()
     
+    init() {
+        guard let url = URL(string: "https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline") else { return }
+        
+        URLSession.shared.dataTask(with: url) { data, _, error in
+            guard let data = data else {
+                print(error?.localizedDescription ?? "No description error")
+                return
+            }
+            do{
+                let maybs = try JSONDecoder().decode([Maybelline].self, from: data)
+                DispatchQueue.main.async {
+                    self.maybelline = maybs
+                }
+            } catch {
+                print(error.localizedDescription)
+            }
+        }.resume()
+    }
 }

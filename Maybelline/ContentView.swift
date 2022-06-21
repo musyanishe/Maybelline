@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var getMaybellineData = NetworkManager()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List(getMaybellineData.maybelline) { mayb in
+                Text(mayb.productType)
+            }
+        }.navigationBarTitle("Product Type")
     }
 }
 

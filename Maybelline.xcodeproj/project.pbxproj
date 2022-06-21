@@ -14,6 +14,7 @@
 		CE24633E285FBF66000B7F66 /* Maybelline.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE24633D285FBF66000B7F66 /* Maybelline.swift */; };
 		CE246341285FC4D0000B7F66 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE246340285FC4D0000B7F66 /* NetworkManager.swift */; };
 		CE246344285FCFB7000B7F66 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CE246343285FCFB7000B7F66 /* SDWebImageSwiftUI */; };
+		CEA552762861F21D00188EC8 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CEA552752861F21D00188EC8 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA552762861F21D00188EC8 /* SDWebImageSwiftUI in Frameworks */,
 				CE246344285FCFB7000B7F66 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,6 +111,7 @@
 			name = Maybelline;
 			packageProductDependencies = (
 				CE246343285FCFB7000B7F66 /* SDWebImageSwiftUI */,
+				CEA552752861F21D00188EC8 /* SDWebImageSwiftUI */,
 			);
 			productName = Maybelline;
 			productReference = CE24632B285FBEFF000B7F66 /* Maybelline.app */;
@@ -140,6 +143,7 @@
 			mainGroup = CE246322285FBEFF000B7F66;
 			packageReferences = (
 				CE246342285FCFB7000B7F66 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				CEA552742861F21D00188EC8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = CE24632C285FBEFF000B7F66 /* Products */;
 			projectDirPath = "";
@@ -381,12 +385,25 @@
 				version = 2.0.2;
 			};
 		};
+		CEA552742861F21D00188EC8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		CE246343285FCFB7000B7F66 /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CE246342285FCFB7000B7F66 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		CEA552752861F21D00188EC8 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEA552742861F21D00188EC8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
