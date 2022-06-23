@@ -7,6 +7,21 @@
 
 import Foundation
 
-class StarterViewModel {
-    @Published var maybelline: [Maybelline] = []
+class StarterViewModel: ObservableObject {
+//    @Published var getMaybellineData = NetworkManager()
+//    @Published var mayb: Maybelline
+//    
+//  
+//    
+//    func getFilteredProductType() -> [String] {
+//        let productType = [mayb.productType]
+//        var filteredPT: [String] = []
+//        for filterpt in productType {
+//            if filteredPT.contains(filterpt) {
+//                filteredPT.append(filterpt)
+//            }
+//        }
+//        return filteredPT
+//    }
+    
 }

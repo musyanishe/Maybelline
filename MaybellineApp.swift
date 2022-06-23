@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct MaybellineApp: App {
+    
+    @StateObject var starterViewModel: StarterViewModel = StarterViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StarterView()
         }
+        
     }
 }

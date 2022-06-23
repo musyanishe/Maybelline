@@ -7,8 +7,9 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    @ObservedObject var getMaybellineData = NetworkManager()
+struct StarterView: View {
+//    @EnvironmentObject var starterViewModel: StarterViewModel
+    @StateObject var getMaybellineData = NetworkManager()
     
     var body: some View {
         NavigationView {
@@ -19,9 +20,12 @@ struct ContentView: View {
         }
     }
 }
+    
 
-struct ContentView_Previews: PreviewProvider {
+
+
+struct StarterView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        StarterView()
     }
 }
