@@ -12,6 +12,10 @@ class NetworkManager: ObservableObject {
     @Published var maybelline = [Maybelline]()
     
     init() {
+        fetchData()
+    }
+    
+    func fetchData() {
         guard let url = URL(string: "https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline") else { return }
         
         URLSession.shared.dataTask(with: url) { data, _, error in

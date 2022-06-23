@@ -15,7 +15,8 @@ struct ContentView: View {
             List(getMaybellineData.maybelline) { mayb in
                 Text(mayb.productType)
             }
-        }.navigationBarTitle("Product Type")
+            .navigationBarTitle("Product Type")
+        }
     }
 }
 
