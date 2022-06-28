@@ -13,14 +13,12 @@
 		CE246336285FBF02000B7F66 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE246335285FBF02000B7F66 /* Preview Assets.xcassets */; };
 		CE24633E285FBF66000B7F66 /* Maybelline.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE24633D285FBF66000B7F66 /* Maybelline.swift */; };
 		CE246341285FC4D0000B7F66 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE246340285FC4D0000B7F66 /* NetworkManager.swift */; };
-		CE246344285FCFB7000B7F66 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CE246343285FCFB7000B7F66 /* SDWebImageSwiftUI */; };
 		CE4D982428649A7500504F10 /* StarterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D982328649A7500504F10 /* StarterViewModel.swift */; };
 		CEA0A3842863BAAA007EFBC9 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0A3832863BAAA007EFBC9 /* ProductView.swift */; };
-		CEA552762861F21D00188EC8 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CEA552752861F21D00188EC8 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE24632B285FBEFF000B7F66 /* Maybelline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maybelline.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE24632B285FBEFF000B7F66 /* Maybelline on Well.ca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Maybelline on Well.ca.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE24632E285FBEFF000B7F66 /* MaybellineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaybellineApp.swift; sourceTree = "<group>"; };
 		CE246330285FBEFF000B7F66 /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
 		CE246332285FBF02000B7F66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -36,8 +34,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEA552762861F21D00188EC8 /* SDWebImageSwiftUI in Frameworks */,
-				CE246344285FCFB7000B7F66 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +57,7 @@
 		CE24632C285FBEFF000B7F66 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE24632B285FBEFF000B7F66 /* Maybelline.app */,
+				CE24632B285FBEFF000B7F66 /* Maybelline on Well.ca.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,11 +120,9 @@
 			);
 			name = Maybelline;
 			packageProductDependencies = (
-				CE246343285FCFB7000B7F66 /* SDWebImageSwiftUI */,
-				CEA552752861F21D00188EC8 /* SDWebImageSwiftUI */,
 			);
 			productName = Maybelline;
-			productReference = CE24632B285FBEFF000B7F66 /* Maybelline.app */;
+			productReference = CE24632B285FBEFF000B7F66 /* Maybelline on Well.ca.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -156,8 +150,6 @@
 			);
 			mainGroup = CE246322285FBEFF000B7F66;
 			packageReferences = (
-				CE246342285FCFB7000B7F66 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
-				CEA552742861F21D00188EC8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = CE24632C285FBEFF000B7F66 /* Products */;
 			projectDirPath = "";
@@ -325,6 +317,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -333,10 +326,10 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = DreamToBeADev.Maybelline;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Maybelline on Well.ca";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -354,6 +347,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -362,10 +356,10 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = DreamToBeADev.Maybelline;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Maybelline on Well.ca";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -391,38 +385,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		CE246342285FCFB7000B7F66 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
-			requirement = {
-				kind = exactVersion;
-				version = 2.0.2;
-			};
-		};
-		CEA552742861F21D00188EC8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		CE246343285FCFB7000B7F66 /* SDWebImageSwiftUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CE246342285FCFB7000B7F66 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
-			productName = SDWebImageSwiftUI;
-		};
-		CEA552752861F21D00188EC8 /* SDWebImageSwiftUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CEA552742861F21D00188EC8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
-			productName = SDWebImageSwiftUI;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE246323285FBEFF000B7F66 /* Project object */;
 }
