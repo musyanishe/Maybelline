@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import SDWebImageSwiftUI
+
 
 struct ProductView: View {
     
@@ -16,16 +16,13 @@ struct ProductView: View {
     
     var body: some View {
         TabView {
-            VStack{
-                AnimatedImage(url: URL(string: url))
-                    .resizable()
-                    .frame(width: 300, height: 300)
+            
                 
                 Text(String(rating))
                 Text(description)
             }
         }
-    }
+    
 }
 
 struct ProductView_Previews: PreviewProvider {

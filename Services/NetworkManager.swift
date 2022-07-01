@@ -8,13 +8,13 @@
 import Combine
 import Foundation
 
-enum NetworkError {
+enum NetworkError: Error {
     case noData
     case invalidURL
     case decodingError
 }
 
-class NetworkManager: {
+class NetworkManager {
     
     static let shared = NetworkManager()
     
@@ -41,13 +41,13 @@ class NetworkManager: {
          */
         
     //there is code for networking with async/await
-    func fetchMaybs async throws -> [Maybelline] {
+    func fetchMaybs() async throws -> [Maybelline] {
         
         guard let url = URL(string: "https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline") else { throw NetworkError.invalidURL
         }
         
         let (data, _) = try await URLSession.shared.data(from: url)
-        guard let maybs = JSONDecoder().decode([Maybelline].self, from: data) else {
+        guard let maybs = try? JSONDecoder().decode([Maybelline].self, from: data) else {
             throw NetworkError.decodingError
         }
         return maybs

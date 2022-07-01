@@ -7,11 +7,12 @@
 
 import Foundation
 
-class StarterViewModel:  {
+class StarterViewModel: ObservableObject {
     
-  
+    private let products: Maybelline
+    
     func getFilteredProductType() -> [String] {
-        let productType = [mayb.productType]
+        let productType = [products.productType]
         var filteredPT: [String] = []
         for filterpt in productType {
             if filteredPT.contains(filterpt) {
@@ -19,6 +20,10 @@ class StarterViewModel:  {
             }
         }
         return filteredPT
+    }
+    
+    init(products: Maybelline) {
+        self.products = products
     }
     
 }
