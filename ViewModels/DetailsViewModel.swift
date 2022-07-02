@@ -34,11 +34,9 @@ class DetailsViewModel {
         mayb.description
     }
     
-//    var rating: Double {
-//        guard let rating = rating {
-//            rating = mayb.rating
-//        } else { return }
-//    }
+    var rating: Double {
+        mayb.rating
+    }
     
     private let mayb: Maybelline
     

@@ -10,11 +10,10 @@ import SwiftUI
 @main
 struct MaybellineApp: App {
     
-    
     var body: some Scene {
         WindowGroup {
-            StarterView()
+            ContentView()
         }
-        
     }
+    
 }

@@ -13,7 +13,7 @@ struct Maybelline: Identifiable, Codable {
     let imageLink: String
     let productLink: String
     let description: String
-    let rating: Double?
+    let rating: Double
     let productType: String
     
     enum CodingKeys: String, CodingKey {
