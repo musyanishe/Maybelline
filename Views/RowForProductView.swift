@@ -50,7 +50,6 @@ struct RowForProductView: View {
                             Spacer()
                             Text(viewModel.rating)
                                 .multilineTextAlignment(.trailing)
-                                .padding()
                         }
                         
                         
@@ -58,7 +57,9 @@ struct RowForProductView: View {
                             .frame(width: 280)
                             .foregroundColor(Color.theme.secondaryText)
                         
+                        Spacer()
                     }
+                    .padding()
                     .frame(width: 300, height: 600)
                 }
             }
