@@ -24,46 +24,42 @@ struct RowForProductView: View {
                     .fontWeight(.medium)
                     .font(.title)
                 Spacer()
-                ZStack{
-                        TabView {
-                            Rectangle()
-                                .frame(width: 300, height: 600)
-                                .cornerRadius(20)
-                                .foregroundColor(Color.theme.elementColor)
-                                .shadow(radius: 20)
-                           
-                        }
-                        .tabViewStyle(.page(indexDisplayMode: .always))
-                        
-                VStack(spacing: 15) {
-                    getImage(from: viewModel.imageData)
-                        .resizable()
-                        .frame(width: imageSize.width, height: imageSize.height)
-                        .cornerRadius(cornerRadius)
-                    
+                
+                ZStack {
                     Rectangle()
-                        .frame(width: 300, height: 3)
-                        .foregroundColor(Color.theme.background)
-                        .shadow(color: Color.theme.background.opacity(0.65), radius: 10, x: 5, y: 5)
-//                        .overlay(alignment: .top) {
-//
-//                            Rectangle()
-//                                .fill(Color.theme.background.opacity(0.75))
-//                                .frame(width: 300, height: 200)
-//                                .rotation3DEffect(.init(degrees: -98), axis: (x: 1, y: 0, z: 0), anchor: .top, anchorZ: 0.5, perspective: 1)
-//                        }
-                    HStack{
-                        Spacer()
-                    Text("\(viewModel.rating)")
-                        .multilineTextAlignment(.trailing)
-                    }
+                        .frame(width: 300, height: 600)
+                        .cornerRadius(20)
+                        .foregroundColor(Color.theme.elementColor)
+                        .shadow(radius: 20)
                     
                     
-                    Text(viewModel.name)
-                        .frame(width: 280)
-                        .foregroundColor(Color.theme.secondaryText)
+                    
+                    VStack {
+                        getImage(from: viewModel.imageData)
+                            .resizable()
+                            .frame(width: imageSize.width, height: imageSize.height)
+                            .cornerRadius(cornerRadius)
                         
-                }
+                        Rectangle()
+                            .frame(width: 300, height: 3)
+                            .foregroundColor(Color.theme.background)
+                            .shadow(color: Color.theme.background.opacity(0.65), radius: 10, x: 5, y: 5)
+                        
+                        
+                        HStack {
+                            Spacer()
+                            Text(viewModel.rating)
+                                .multilineTextAlignment(.trailing)
+                                .padding()
+                        }
+                        
+                        
+                        Text(viewModel.name)
+                            .frame(width: 280)
+                            .foregroundColor(Color.theme.secondaryText)
+                        
+                    }
+                    .frame(width: 300, height: 600)
                 }
             }
         }

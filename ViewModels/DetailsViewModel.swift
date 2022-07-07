@@ -34,8 +34,8 @@ class DetailsViewModel: ObservableObject {
         mayb.description
     }
     
-    var rating: Double {
-        mayb.rating
+    var rating: String {
+        String(format: "%.02f", mayb.rating)
     }
     
     private let mayb: Maybelline
