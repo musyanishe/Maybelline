@@ -27,7 +27,7 @@ struct RowForProductView: View {
                 
                 ZStack {
                     Rectangle()
-                        .frame(width: 300, height: 600)
+                        .frame(width: 300, height: 700)
                         .cornerRadius(20)
                         .foregroundColor(Color.theme.elementColor)
                         .shadow(radius: 20)
@@ -39,6 +39,7 @@ struct RowForProductView: View {
                             .resizable()
                             .frame(width: imageSize.width, height: imageSize.height)
                             .cornerRadius(cornerRadius)
+                            
                         
                         Rectangle()
                             .frame(width: 300, height: 3)
@@ -52,15 +53,18 @@ struct RowForProductView: View {
                                 .multilineTextAlignment(.trailing)
                         }
                         
-                        
                         Text(viewModel.name)
                             .frame(width: 280)
                             .foregroundColor(Color.theme.secondaryText)
                         
+                        Text(viewModel.description)
+                            .multilineTextAlignment(.leading)
+                            .lineLimit(nil)
+                           
                         Spacer()
                     }
                     .padding()
-                    .frame(width: 300, height: 600)
+                    .frame(width: 300, height: 700)
                 }
             }
         }
