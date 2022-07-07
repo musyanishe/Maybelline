@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE220CDC2870778400D25C8C /* AllProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE220CDB2870778400D25C8C /* AllProductsView.swift */; };
+		CE220CDC2870778400D25C8C /* RowForProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE220CDB2870778400D25C8C /* RowForProductView.swift */; };
 		CE220CDE2870779800D25C8C /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE220CDD2870779800D25C8C /* FavoritesView.swift */; };
 		CE220CE1287077CD00D25C8C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE220CE0287077CD00D25C8C /* ContentView.swift */; };
 		CE24632F285FBEFF000B7F66 /* MaybellineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE24632E285FBEFF000B7F66 /* MaybellineApp.swift */; };
@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE220CDB2870778400D25C8C /* AllProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProductsView.swift; sourceTree = "<group>"; };
+		CE220CDB2870778400D25C8C /* RowForProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowForProductView.swift; sourceTree = "<group>"; };
 		CE220CDD2870779800D25C8C /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		CE220CE0287077CD00D25C8C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE24632B285FBEFF000B7F66 /* Maybelline on Well.ca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Maybelline on Well.ca.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,7 +78,7 @@
 			children = (
 				CE220CE0287077CD00D25C8C /* ContentView.swift */,
 				CE246330285FBEFF000B7F66 /* StarterView.swift */,
-				CE220CDB2870778400D25C8C /* AllProductsView.swift */,
+				CE220CDB2870778400D25C8C /* RowForProductView.swift */,
 				CE220CDD2870779800D25C8C /* FavoritesView.swift */,
 				CEA0A3832863BAAA007EFBC9 /* ProductView.swift */,
 			);
@@ -200,7 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE220CDC2870778400D25C8C /* AllProductsView.swift in Sources */,
+				CE220CDC2870778400D25C8C /* RowForProductView.swift in Sources */,
 				CEA0A3842863BAAA007EFBC9 /* ProductView.swift in Sources */,
 				CE246341285FC4D0000B7F66 /* NetworkManager.swift in Sources */,
 				CE246331285FBEFF000B7F66 /* StarterView.swift in Sources */,

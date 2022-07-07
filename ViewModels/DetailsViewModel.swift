@@ -7,7 +7,7 @@
 
 import Foundation
 
-class DetailsViewModel {
+class DetailsViewModel: ObservableObject {
     
     var name: String {
         mayb.name

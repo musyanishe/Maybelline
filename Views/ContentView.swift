@@ -15,11 +15,11 @@ struct ContentView: View {
                     Image("29")
                     Text("Home")
                 }
-            AllProductsView()
-                .tabItem {
-                    Image(systemName: "circle.grid.3x3.circle")
-                    Text("All products")
-                }
+//            RowForProductView()
+//                .tabItem {
+//                    Image(systemName: "circle.grid.3x3.circle")
+//                    Text("All products")
+//                }
             FavoritesView()
                 .tabItem {
                     Image(systemName: "suit.heart")
