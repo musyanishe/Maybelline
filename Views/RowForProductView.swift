@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RowForProductView: View {
-    @StateObject var viewModel: DetailsViewModel
+    let maybelline: Maybelline
     let imageData: Data
     let imageSize: CGSize
     let cornerRadius: CGFloat
@@ -19,26 +19,26 @@ struct RowForProductView: View {
                 .ignoresSafeArea()
             
             VStack {
+                
                 Text("Maybelline on Well.ca")
                     .foregroundColor(Color.theme.accent)
                     .fontWeight(.medium)
                     .font(.title)
+                    
                 Spacer()
                 
                 ZStack {
                     Rectangle()
                         .frame(width: 300, height: 700)
                         .cornerRadius(20)
-                        .foregroundColor(Color.theme.elementColor)
+                        .foregroundColor(.white)
                         .shadow(radius: 20)
                     
-                    
-                    
                     VStack {
-                        getImage(from: viewModel.imageData)
-                            .resizable()
-                            .frame(width: imageSize.width, height: imageSize.height)
-                            .cornerRadius(cornerRadius)
+//                        getImage(from: viewModel.imageData)
+//                            .resizable()
+//                            .frame(width: imageSize.width, height: imageSize.height)
+//                            .cornerRadius(cornerRadius)
                             
                         
                         Rectangle()
@@ -47,25 +47,39 @@ struct RowForProductView: View {
                             .shadow(color: Color.theme.background.opacity(0.65), radius: 10, x: 5, y: 5)
                         
                         
-                        HStack {
-                            Spacer()
-                            Text(viewModel.rating)
-                                .multilineTextAlignment(.trailing)
-                        }
+//                        HStack {
+//                            Spacer()
+//                            Text(viewModel.rating ?? "No rating yet")
+//                                .multilineTextAlignment(.trailing)
+//                                .foregroundColor(Color.theme.secondaryText)
+//                                .font(Font.headline.bold())
+//                        }
                         
-                        Text(viewModel.name)
-                            .frame(width: 280)
-                            .foregroundColor(Color.theme.secondaryText)
-                        
-                        Text(viewModel.description)
-                            .multilineTextAlignment(.leading)
-                            .lineLimit(nil)
+//                        Text(viewModel.name)
+//                            .frame(width: 280)
+//                            .foregroundColor(Color.theme.secondaryText)
+//                            .font(.headline)
+//                        
+//                        Text(viewModel.description)
+//                            .multilineTextAlignment(.leading)
+//                            .lineLimit(nil)
+//                            .foregroundColor(Color.theme.secondaryText)
+//                            .font(Font.body)
                            
                         Spacer()
                     }
                     .padding()
                     .frame(width: 300, height: 700)
                 }
+                Button("See more...") {
+                    ()
+                }
+                .padding()
+                .background(Color.theme.accent)
+                .cornerRadius(40)
+                .foregroundColor(Color.theme.secondaryText)
+                .font(.body)
+                
             }
         }
     }
@@ -80,10 +94,16 @@ struct RowForProductView: View {
 struct RowForProductView_Previews: PreviewProvider {
     static var previews: some View {
         RowForProductView(
-            viewModel: DetailsViewModel(mayb: Maybelline.getHardInfo()),
+            maybelline: dev.maybelline,
             imageData: Data(),
             imageSize: CGSize(width: 200, height: 200),
             cornerRadius: 20)
+        
+        
+        
+        
+        
+        
         
         
     }
