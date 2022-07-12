@@ -8,10 +8,7 @@
 import SwiftUI
 
 struct RowForProductView: View {
-    let maybelline: Maybelline
-    let imageData: Data
-    let imageSize: CGSize
-    let cornerRadius: CGFloat
+    @StateObject var viewModel: DetailsViewModel
     
     var body: some View {
         ZStack {
@@ -35,10 +32,10 @@ struct RowForProductView: View {
                         .shadow(radius: 20)
                     
                     VStack {
-//                        getImage(from: viewModel.imageData)
-//                            .resizable()
-//                            .frame(width: imageSize.width, height: imageSize.height)
-//                            .cornerRadius(cornerRadius)
+                        ProductImageView(
+                            imageData: viewModel.imageData,
+                            imageSize: CGSize(width: 200, height: 200)
+                        )
                             
                         
                         Rectangle()
@@ -49,7 +46,7 @@ struct RowForProductView: View {
                         
 //                        HStack {
 //                            Spacer()
-//                            Text(viewModel.rating ?? "No rating yet")
+//                            Text("\(maybelline.rating)")
 //                                .multilineTextAlignment(.trailing)
 //                                .foregroundColor(Color.theme.secondaryText)
 //                                .font(Font.headline.bold())
@@ -84,27 +81,11 @@ struct RowForProductView: View {
         }
     }
     
-    private func getImage(from data: Data) -> Image {
-        guard let image = UIImage(data: data) else { return Image(systemName: "xmark.shield")}
-        return Image(uiImage: image)
-    }
-    
 }
 
 struct RowForProductView_Previews: PreviewProvider {
     static var previews: some View {
         RowForProductView(
-            maybelline: dev.maybelline,
-            imageData: Data(),
-            imageSize: CGSize(width: 200, height: 200),
-            cornerRadius: 20)
-        
-        
-        
-        
-        
-        
-        
-        
+            viewModel: DetailsViewModel(mayb: Maybelline.getHardInfo()))
     }
 }
