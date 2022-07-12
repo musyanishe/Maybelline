@@ -21,6 +21,7 @@ struct RowForProductView: View {
                     .foregroundColor(Color.theme.accent)
                     .fontWeight(.medium)
                     .font(.title)
+                
                     
                 Spacer()
                 
@@ -44,38 +45,32 @@ struct RowForProductView: View {
                             .shadow(color: Color.theme.background.opacity(0.65), radius: 10, x: 5, y: 5)
                         
                         
-//                        HStack {
-//                            Spacer()
-//                            Text("\(maybelline.rating)")
-//                                .multilineTextAlignment(.trailing)
-//                                .foregroundColor(Color.theme.secondaryText)
-//                                .font(Font.headline.bold())
-//                        }
+                        RatingView(rating: viewModel.rating)
                         
-//                        Text(viewModel.name)
-//                            .frame(width: 280)
-//                            .foregroundColor(Color.theme.secondaryText)
-//                            .font(.headline)
-//                        
-//                        Text(viewModel.description)
-//                            .multilineTextAlignment(.leading)
-//                            .lineLimit(nil)
-//                            .foregroundColor(Color.theme.secondaryText)
-//                            .font(Font.body)
+                        Text(viewModel.name)
+                            .frame(width: 280)
+                            .foregroundColor(Color.theme.secondaryText)
+                            .font(.headline)
+                        
+                        Text(viewModel.description)
+                            .lineLimit(nil)
+                            .foregroundColor(Color.theme.secondaryText)
+                            .font(Font.body)
+                            .padding()
                            
                         Spacer()
                     }
-                    .padding()
                     .frame(width: 300, height: 700)
                 }
                 Button("See more...") {
-                    ()
+//                    viewModel.productLink
                 }
                 .padding()
                 .background(Color.theme.accent)
                 .cornerRadius(40)
-                .foregroundColor(Color.theme.secondaryText)
+                .foregroundColor(Color.theme.elementColor)
                 .font(.body)
+                
                 
             }
         }
@@ -83,9 +78,45 @@ struct RowForProductView: View {
     
 }
 
+struct RatingView: View {
+    var rating: Double
+    
+    var body: some View {
+        HStack(spacing: 5) {
+            Spacer()
+            ForEach(1...5, id: \.self) { index in
+                Image(systemName: "star.fill")
+                    .font(.system(size: 8))
+                    .foregroundColor(Color.theme.secondaryText.opacity(index > Int(rating) ? 0.2 : 1))
+            }
+            Text(String(format: "%.2f", rating))
+                .foregroundColor(Color.theme.secondaryText)
+                .font(Font.headline.bold())
+        }
+    }
+}
+
+struct FavoriteButton: View {
+    var isFavorite: Bool
+    var action: () -> Void
+    
+    var body: some View {
+        Button(action: action) {
+            Image(systemName: "heart.fill")
+                .resizable()
+                .frame(width: 30, height: 30)
+                .foregroundColor(isFavorite ? .red : .gray)
+        }
+    }
+    
+    
+}
+
 struct RowForProductView_Previews: PreviewProvider {
     static var previews: some View {
         RowForProductView(
             viewModel: DetailsViewModel(mayb: Maybelline.getHardInfo()))
+        .preferredColorScheme(.dark)
+        
     }
 }
