@@ -8,22 +8,11 @@
 import SwiftUI
 
 struct RowForProductView: View {
-    @StateObject var viewModel: DetailsViewModel
+    let viewModel: DetailsViewModel
     
     var body: some View {
-        ZStack {
-            Color.theme.background
-                .ignoresSafeArea()
             
             VStack {
-                
-                Text("Maybelline on Well.ca")
-                    .foregroundColor(Color.theme.accent)
-                    .fontWeight(.medium)
-                    .font(.title)
-                
-                    
-                Spacer()
                 
                 ZStack {
                     Rectangle()
@@ -38,12 +27,10 @@ struct RowForProductView: View {
                             imageSize: CGSize(width: 200, height: 200)
                         )
                             
-                        
                         Rectangle()
                             .frame(width: 300, height: 3)
                             .foregroundColor(Color.theme.background)
                             .shadow(color: Color.theme.background.opacity(0.65), radius: 10, x: 5, y: 5)
-                        
                         
                         RatingView(rating: viewModel.rating)
                         
@@ -61,6 +48,7 @@ struct RowForProductView: View {
                         Spacer()
                     }
                     .frame(width: 300, height: 700)
+                    
                 }
                 
                 Button ("See more...") {
@@ -76,7 +64,6 @@ struct RowForProductView: View {
             }
         }
     }
-}
 
 struct FavoriteButton: View {
     var isFavorite: Bool
@@ -94,7 +81,15 @@ struct FavoriteButton: View {
 
 struct RowForProductView_Previews: PreviewProvider {
     static var previews: some View {
-        RowForProductView(
-            viewModel: DetailsViewModel(mayb: Maybelline.getHardInfo()))
+        Group {
+            RowForProductView(
+                viewModel: DetailsViewModel(mayb: Maybelline.getHardInfo()))
+            .previewLayout(.sizeThatFits)
+            
+            
+            RowForProductView(viewModel: DetailsViewModel(mayb: Maybelline.getHardInfo()))
+                .previewLayout(.sizeThatFits)
+                .colorScheme(.dark)
+        }
     }
 }
