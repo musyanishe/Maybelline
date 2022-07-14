@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct StarterView: View {
-
+    
     var body: some View {
         Text("Hello")
     }

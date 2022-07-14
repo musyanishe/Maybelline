@@ -2,7 +2,7 @@
 //  Extension+Color.swift
 //  Maybelline
 //
-//  Created by Евгения Шевцова on 03.07.2022.
+//  Created by Евгения Шевцова on 13.07.2022.
 //
 
 import Foundation
@@ -18,7 +18,7 @@ struct ColorTheme {
     
     let accent = Color("AccentColor")
     let background = Color("BackgroundColor")
+    let element = Color("ElementColor")
     let secondaryText = Color("SecondaryText")
-    let elementColor = Color("ElementColor")
     
 }

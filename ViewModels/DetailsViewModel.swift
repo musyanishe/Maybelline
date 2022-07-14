@@ -34,10 +34,6 @@ class DetailsViewModel: ObservableObject {
         mayb.description
     }
     
-//    var rating: String {
-//       String(format: "%.2f", mayb.rating ?? 0)
-//    }
-    
     var rating: Double {
         mayb.rating ?? 0
     }
@@ -47,4 +43,6 @@ class DetailsViewModel: ObservableObject {
     init(mayb: Maybelline) {
         self.mayb = mayb
     }
+    
+    
 }
