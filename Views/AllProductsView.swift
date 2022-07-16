@@ -13,6 +13,7 @@ struct AllProductsView: View {
     @StateObject var viewModel = AllProductsViewModel()
     
     var body: some View {
+        
         ZStack {
             Color.theme.background
                 .ignoresSafeArea()
@@ -23,15 +24,17 @@ struct AllProductsView: View {
                     .fontWeight(.medium)
                     .font(.title)
                 
-                
-                TabView {
-                    List(viewModel.productCarts, id: \.name) {
-                        detailsViewModel in
-                        RowForProductView(viewModel: detailsViewModel)
+                let columns = [GridItem(.fixed(700), spacing: 30)]
+                ScrollView(.horizontal){
+                    LazyHGrid(rows: columns) {
+                        ForEach(viewModel.productCarts, id: \.id) {
+                            detailsViewModel in
+                            RowForProductView(viewModel: detailsViewModel)
+                        }
+                        .padding(10)
                     }
+                    .padding(.leading, 60)
                 }
-                .tabViewStyle(.page(indexDisplayMode: .always))
-                .indexViewStyle(.page)
                 .task {
                     await viewModel.fetchMaybsProducts()
                 }

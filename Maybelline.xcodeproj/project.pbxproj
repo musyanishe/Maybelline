@@ -19,9 +19,9 @@
 		CE24633E285FBF66000B7F66 /* Maybelline.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE24633D285FBF66000B7F66 /* Maybelline.swift */; };
 		CE246341285FC4D0000B7F66 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE246340285FC4D0000B7F66 /* NetworkManager.swift */; };
 		CE4D982428649A7500504F10 /* StarterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D982328649A7500504F10 /* StarterViewModel.swift */; };
-		CE54B748287EF6D90097E7E5 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE54B747287EF6D80097E7E5 /* Extension+Color.swift */; };
 		CE54B74A287EF9640097E7E5 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE54B749287EF9640097E7E5 /* RatingView.swift */; };
 		CEA0A3842863BAAA007EFBC9 /* AllProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0A3832863BAAA007EFBC9 /* AllProductsView.swift */; };
+		CEABD8E12882D3CD005C3FF5 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEABD8E02882D3CD005C3FF5 /* Extension+Color.swift */; };
 		CEB5164E286F34C9005DBD28 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB5164D286F34C9005DBD28 /* DetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,9 +39,9 @@
 		CE24633D285FBF66000B7F66 /* Maybelline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maybelline.swift; sourceTree = "<group>"; };
 		CE246340285FC4D0000B7F66 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		CE4D982328649A7500504F10 /* StarterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterViewModel.swift; sourceTree = "<group>"; };
-		CE54B747287EF6D80097E7E5 /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Extension+Color.swift"; path = "ViewModels/Extension+Color.swift"; sourceTree = SOURCE_ROOT; };
 		CE54B749287EF9640097E7E5 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		CEA0A3832863BAAA007EFBC9 /* AllProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProductsView.swift; sourceTree = "<group>"; };
+		CEABD8E02882D3CD005C3FF5 /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Extension+Color.swift"; path = "Elements/Extension+Color.swift"; sourceTree = SOURCE_ROOT; };
 		CEB5164D286F34C9005DBD28 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,7 +138,7 @@
 		CE682B632871CDAA00AEB4D0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				CE54B747287EF6D80097E7E5 /* Extension+Color.swift */,
+				CEABD8E02882D3CD005C3FF5 /* Extension+Color.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -225,8 +225,8 @@
 				CE24633E285FBF66000B7F66 /* Maybelline.swift in Sources */,
 				CEB5164E286F34C9005DBD28 /* DetailsViewModel.swift in Sources */,
 				CE220CE1287077CD00D25C8C /* ContentView.swift in Sources */,
-				CE54B748287EF6D90097E7E5 /* Extension+Color.swift in Sources */,
 				CE4D982428649A7500504F10 /* StarterViewModel.swift in Sources */,
+				CEABD8E12882D3CD005C3FF5 /* Extension+Color.swift in Sources */,
 				CE24632F285FBEFF000B7F66 /* MaybellineApp.swift in Sources */,
 				CE220CDE2870779800D25C8C /* FavoritesView.swift in Sources */,
 				CE07AB4D287D61F200A59265 /* ProductImageView.swift in Sources */,

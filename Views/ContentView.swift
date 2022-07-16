@@ -15,11 +15,11 @@ struct ContentView: View {
                     Image("29")
                     Text("Home")
                 }
-//            RowForProductView(viewModel: <#T##DetailsViewModel#>, imageData: <#T##Data#>, imageSize: <#T##CGSize#>, cornerRadius: <#T##CGFloat#>)
-//                .tabItem {
-//                    Image(systemName: "circle.grid.3x3.circle")
-//                    Text("All products")
-//                }
+            AllProductsView()
+                .tabItem {
+                    Image(systemName: "circle.grid.3x3.circle")
+                    Text("All products")
+                }
             FavoritesView()
                 .tabItem {
                     Image(systemName: "suit.heart")

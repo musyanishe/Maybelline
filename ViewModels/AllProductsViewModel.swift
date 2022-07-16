@@ -13,7 +13,7 @@ class AllProductsViewModel: ObservableObject {
     func fetchMaybsProducts() async {
         do {
             let carts = try await NetworkManager.shared.fetchMaybs()
-            productCarts = carts.map { DetailsViewModel(mayb: $0)}
+            productCarts = carts.map { DetailsViewModel(mayb: $0) }
         } catch {
             print(error)
         }

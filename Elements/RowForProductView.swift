@@ -32,7 +32,18 @@ struct RowForProductView: View {
                             .foregroundColor(Color.theme.background)
                             .shadow(color: Color.theme.background.opacity(0.65), radius: 10, x: 5, y: 5)
                         
-                        RatingView(rating: viewModel.rating)
+                        if viewModel.rating != 0 {
+                            RatingView(rating: viewModel.rating)
+                        } else {
+                            HStack {
+                            Spacer()
+                            Text("No rating yet")
+                                .foregroundColor(Color.theme.background)
+                                .padding(.trailing, 10)
+                                .font(Font.headline.bold())
+                            
+                        }
+                        }
                         
                         Text(viewModel.name)
                             .frame(width: 280)
@@ -44,23 +55,21 @@ struct RowForProductView: View {
                             .foregroundColor(Color.theme.secondaryText)
                             .font(Font.body)
                             .padding()
-                           
-                        Spacer()
+                        
+                        Button ("See more...") {
+                            if let url = URL(string: viewModel.productLink) {
+                                UIApplication.shared.open(url)
+                            }
+                        }
+                        .padding()
+                        .background(Color.theme.accent)
+                        .cornerRadius(40)
+                        .foregroundColor(Color.theme.element)
+                        .font(.body)
                     }
                     .frame(width: 300, height: 700)
                     
                 }
-                
-                Button ("See more...") {
-                    if let url = URL(string: viewModel.productLink) {
-                        UIApplication.shared.open(url)
-                    }
-                }
-                .padding()
-                .background(Color.theme.accent)
-                .cornerRadius(40)
-                .foregroundColor(Color.theme.element)
-                .font(.body)
             }
         }
     }

@@ -9,6 +9,10 @@ import Foundation
 
 class DetailsViewModel: ObservableObject {
     
+    var id: Int {
+        mayb.id
+    }
+    
     var name: String {
         mayb.name
     }

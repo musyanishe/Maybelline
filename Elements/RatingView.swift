@@ -21,6 +21,7 @@ struct RatingView: View {
             Text(String(format: "%.1f", rating))
                 .foregroundColor(Color.theme.secondaryText)
                 .font(Font.headline.bold())
+                .padding(.trailing, 10)
         }
     }
 }
