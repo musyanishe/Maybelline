@@ -8,13 +8,23 @@
 import SwiftUI
 
 struct FavoritesView: View {
+    
+    @StateObject var viewModel = AllProductsViewModel()
+    let detailsViewModel: DetailsViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        if detailsViewModel.isFavorite {
+//           R
+        } else {
+            Image(systemName: "heart.fill")
+        }
+        
     }
 }
 
 struct FavoritesView_Previews: PreviewProvider {
     static var previews: some View {
-        FavoritesView()
+        FavoritesView(detailsViewModel: DetailsViewModel(mayb: Maybelline.getHardInfo()))
     }
 }

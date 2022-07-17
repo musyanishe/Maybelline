@@ -18,11 +18,13 @@
 		CE246336285FBF02000B7F66 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE246335285FBF02000B7F66 /* Preview Assets.xcassets */; };
 		CE24633E285FBF66000B7F66 /* Maybelline.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE24633D285FBF66000B7F66 /* Maybelline.swift */; };
 		CE246341285FC4D0000B7F66 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE246340285FC4D0000B7F66 /* NetworkManager.swift */; };
+		CE2A12B02882F75F00A42A9E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A12AF2882F75F00A42A9E /* DataManager.swift */; };
 		CE4D982428649A7500504F10 /* StarterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D982328649A7500504F10 /* StarterViewModel.swift */; };
 		CE54B74A287EF9640097E7E5 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE54B749287EF9640097E7E5 /* RatingView.swift */; };
 		CEA0A3842863BAAA007EFBC9 /* AllProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0A3832863BAAA007EFBC9 /* AllProductsView.swift */; };
 		CEABD8E12882D3CD005C3FF5 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEABD8E02882D3CD005C3FF5 /* Extension+Color.swift */; };
 		CEB5164E286F34C9005DBD28 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB5164D286F34C9005DBD28 /* DetailsViewModel.swift */; };
+		CEF339D9288440BD00406641 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF339D8288440BD00406641 /* SplashScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,11 +40,13 @@
 		CE246335285FBF02000B7F66 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE24633D285FBF66000B7F66 /* Maybelline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maybelline.swift; sourceTree = "<group>"; };
 		CE246340285FC4D0000B7F66 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CE2A12AF2882F75F00A42A9E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		CE4D982328649A7500504F10 /* StarterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterViewModel.swift; sourceTree = "<group>"; };
 		CE54B749287EF9640097E7E5 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		CEA0A3832863BAAA007EFBC9 /* AllProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProductsView.swift; sourceTree = "<group>"; };
 		CEABD8E02882D3CD005C3FF5 /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Extension+Color.swift"; path = "Elements/Extension+Color.swift"; sourceTree = SOURCE_ROOT; };
 		CEB5164D286F34C9005DBD28 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		CEF339D8288440BD00406641 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 				CE246330285FBEFF000B7F66 /* StarterView.swift */,
 				CE220CDD2870779800D25C8C /* FavoritesView.swift */,
 				CEA0A3832863BAAA007EFBC9 /* AllProductsView.swift */,
+				CEF339D8288440BD00406641 /* SplashScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				CE246340285FC4D0000B7F66 /* NetworkManager.swift */,
+				CE2A12AF2882F75F00A42A9E /* DataManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -218,12 +224,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE220CDC2870778400D25C8C /* RowForProductView.swift in Sources */,
+				CE2A12B02882F75F00A42A9E /* DataManager.swift in Sources */,
 				CEA0A3842863BAAA007EFBC9 /* AllProductsView.swift in Sources */,
 				CE246341285FC4D0000B7F66 /* NetworkManager.swift in Sources */,
 				CE07AB4F287DAD9000A59265 /* AllProductsViewModel.swift in Sources */,
 				CE246331285FBEFF000B7F66 /* StarterView.swift in Sources */,
 				CE24633E285FBF66000B7F66 /* Maybelline.swift in Sources */,
 				CEB5164E286F34C9005DBD28 /* DetailsViewModel.swift in Sources */,
+				CEF339D9288440BD00406641 /* SplashScreen.swift in Sources */,
 				CE220CE1287077CD00D25C8C /* ContentView.swift in Sources */,
 				CE4D982428649A7500504F10 /* StarterViewModel.swift in Sources */,
 				CEABD8E12882D3CD005C3FF5 /* Extension+Color.swift in Sources */,

@@ -21,6 +21,11 @@ struct RowForProductView: View {
                         .foregroundColor(.white)
                         .shadow(radius: 20)
                     
+                    FavoriteButton(isFavorite: viewModel.isFavorite) {
+                        viewModel.favoriteButtonPressed()
+                    }
+                        .offset(x: 120, y: -320)
+                    
                     VStack {
                         ProductImageView(
                             imageData: viewModel.imageData,

@@ -42,11 +42,21 @@ class DetailsViewModel: ObservableObject {
         mayb.rating ?? 0
     }
     
+    @Published var isFavorite: Bool {
+        didSet {
+            DataManager.shared.saveFavoriteProduct(for: mayb.name, with: isFavorite)
+        }
+    }
+    
     private let mayb: Maybelline
     
     init(mayb: Maybelline) {
         self.mayb = mayb
+        isFavorite = DataManager.shared.loadFavoriteProduct(for: mayb.name)
     }
     
+    func favoriteButtonPressed() {
+        isFavorite.toggle()
+    }
     
 }

@@ -20,11 +20,11 @@ struct ContentView: View {
                     Image(systemName: "circle.grid.3x3.circle")
                     Text("All products")
                 }
-            FavoritesView()
-                .tabItem {
-                    Image(systemName: "suit.heart")
-                    Text("Favorites")
-                }
+//            FavoritesView()
+//                .tabItem {
+//                    Image(systemName: "suit.heart")
+//                    Text("Favorites")
+//                }
         }
     }
 }
@@ -32,5 +32,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            
     }
 }
