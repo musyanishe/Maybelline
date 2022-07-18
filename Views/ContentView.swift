@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var endAnimation: Bool = false
+    
     var body: some View {
+        ZStack {
         TabView {
             StarterView()
                 .tabItem {
@@ -26,6 +30,9 @@ struct ContentView: View {
 //                    Text("Favorites")
 //                }
         }
+            
+            SplashScreen(endAnimation: $endAnimation)
+    }
     }
 }
 
