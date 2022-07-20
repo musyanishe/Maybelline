@@ -12,7 +12,7 @@ struct MaybellineApp: App {
     
     var body: some Scene {
         WindowGroup {
-            SplashShape()
+            ContentView()
         }
     }
     
