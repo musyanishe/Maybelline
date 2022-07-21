@@ -22,24 +22,29 @@ struct SplashScreen: View {
             Group{
                 SplashShape()
                     .trim(from: 0, to: startAnimation ? 1 : 0)
-                    .stroke(Color.white, style: StrokeStyle(lineWidth: 20, lineCap: .round, lineJoin: .round))
+                    .stroke(Color.black, style: StrokeStyle(lineWidth: 20, lineCap: .round, lineJoin: .round))
                 
             }
             .frame(width: 300, height: 230)
             .scaleEffect(endAnimation ? 0.15 : 1)
-            .rotationEffect(.init(degrees: endAnimation ? -90 : 0))
             
+            Image("owl")
+                .resizable()
+                .padding(.top, 60)
+                .frame(width: 130, height: 180)
+                .scaleEffect(endAnimation ? 0.15 : 1)
+                
             VStack {
                 Text("Powered by")
                     .font(.callout)
                     .fontWeight(.semibold)
                 
-                Text("musyanishe")
+                Text("Crazy owl musyanishe")
                     .font(.title2)
                     .fontWeight(.semibold)
             }
             .frame(maxHeight: .infinity, alignment: .bottom)
-            .foregroundColor(Color.white.opacity(0.8))
+            .foregroundColor(Color.black.opacity(0.8))
             .padding(.bottom, getSafeArea().bottom == 0 ? 15 : getSafeArea().bottom)
             .opacity(startAnimation ? 1 : 0)
             .opacity(endAnimation ? 0 : 1)

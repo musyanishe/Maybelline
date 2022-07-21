@@ -31,7 +31,6 @@ struct ContentView: View {
             SplashScreen(endAnimation: $endAnimation)
         }
         .environment(\.colorScheme, isDarkMode ? .dark : .light)
-//        .preferredColorScheme(isDarkMode ? .dark : .light)
     }
 }
 
