@@ -20,4 +20,5 @@ class DataManager {
     func loadFavoriteProduct(for name: String) -> Bool {
         userDefaults.bool(forKey: name)
     }
+    
 }

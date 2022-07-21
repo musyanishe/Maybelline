@@ -10,35 +10,34 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var endAnimation: Bool = false
+    @AppStorage("isDarkMode") private var isDarkMode = false
     
     var body: some View {
         ZStack {
-        TabView {
-            StarterView()
-                .tabItem {
-                    Image("29")
-                    Text("Home")
-                }
-            AllProductsView()
-                .tabItem {
-                    Image(systemName: "circle.grid.3x3.circle")
-                    Text("All products")
-                }
-//            FavoritesView()
-//                .tabItem {
-//                    Image(systemName: "suit.heart")
-//                    Text("Favorites")
-//                }
-        }
+            
+            TabView {
+                AllProductsView()
+                    .tabItem {
+                        Image("29")
+                        Text("Home")
+                    }
+                SettingsView()
+                    .tabItem {
+                        Image(systemName: "gear")
+                        Text("Settings")
+                    }
+            }
             
             SplashScreen(endAnimation: $endAnimation)
-    }
+        }
+        .environment(\.colorScheme, isDarkMode ? .dark : .light)
+//        .preferredColorScheme(isDarkMode ? .dark : .light)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            
+        
     }
 }

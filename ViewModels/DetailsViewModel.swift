@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class DetailsViewModel: ObservableObject {
     
@@ -48,15 +49,27 @@ class DetailsViewModel: ObservableObject {
         }
     }
     
+    @Published var shareButton: Bool
+    
     private let mayb: Maybelline
     
     init(mayb: Maybelline) {
         self.mayb = mayb
         isFavorite = DataManager.shared.loadFavoriteProduct(for: mayb.name)
+        shareButton = false
     }
     
     func favoriteButtonPressed() {
         isFavorite.toggle()
+    }
+    
+    func shareButtonPressed() {
+        shareButton.toggle()
+        
+        let url = URL(string: productLink)
+        let av = UIActivityViewController(activityItems: [url ?? ""], applicationActivities: nil)
+        
+        UIApplication.shared.windows.first?.rootViewController?.present(av, animated: true, completion: nil)
     }
     
 }

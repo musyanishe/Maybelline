@@ -26,6 +26,9 @@ struct RowForProductView: View {
                     }
                         .offset(x: 120, y: -320)
                     
+//                    ShareButton(isShared: viewModel.shareButton, action: viewModel.favoriteButtonPressed)
+//                        .offset(x: 120, y: -170)
+                    
                     VStack {
                         ProductImageView(
                             imageData: viewModel.imageData,
@@ -78,6 +81,20 @@ struct RowForProductView: View {
             }
         }
     }
+
+//struct ShareButton: View {
+//    var isShared: Bool
+//    var action: () -> Void
+//    
+//    var body: some View {
+//        Button(action: action) {
+//            Image(systemName: "square.and.arrow.up")
+//                .resizable()
+//                .frame(width: 30, height: 30)
+//                .foregroundColor(Color.gray)
+//        }
+//    }
+//}
 
 struct FavoriteButton: View {
     var isFavorite: Bool

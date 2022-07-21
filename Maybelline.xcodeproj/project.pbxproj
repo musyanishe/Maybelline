@@ -13,7 +13,7 @@
 		CE220CDE2870779800D25C8C /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE220CDD2870779800D25C8C /* FavoritesView.swift */; };
 		CE220CE1287077CD00D25C8C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE220CE0287077CD00D25C8C /* ContentView.swift */; };
 		CE24632F285FBEFF000B7F66 /* MaybellineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE24632E285FBEFF000B7F66 /* MaybellineApp.swift */; };
-		CE246331285FBEFF000B7F66 /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE246330285FBEFF000B7F66 /* StarterView.swift */; };
+		CE246331285FBEFF000B7F66 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE246330285FBEFF000B7F66 /* SettingsView.swift */; };
 		CE246333285FBF02000B7F66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE246332285FBF02000B7F66 /* Assets.xcassets */; };
 		CE246336285FBF02000B7F66 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE246335285FBF02000B7F66 /* Preview Assets.xcassets */; };
 		CE24633E285FBF66000B7F66 /* Maybelline.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE24633D285FBF66000B7F66 /* Maybelline.swift */; };
@@ -35,7 +35,7 @@
 		CE220CE0287077CD00D25C8C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE24632B285FBEFF000B7F66 /* Maybelline on Well.ca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Maybelline on Well.ca.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE24632E285FBEFF000B7F66 /* MaybellineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaybellineApp.swift; sourceTree = "<group>"; };
-		CE246330285FBEFF000B7F66 /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
+		CE246330285FBEFF000B7F66 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		CE246332285FBF02000B7F66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE246335285FBF02000B7F66 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE24633D285FBF66000B7F66 /* Maybelline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maybelline.swift; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				CE220CE0287077CD00D25C8C /* ContentView.swift */,
-				CE246330285FBEFF000B7F66 /* StarterView.swift */,
+				CE246330285FBEFF000B7F66 /* SettingsView.swift */,
 				CE220CDD2870779800D25C8C /* FavoritesView.swift */,
 				CEA0A3832863BAAA007EFBC9 /* AllProductsView.swift */,
 				CEF339D8288440BD00406641 /* SplashScreen.swift */,
@@ -228,7 +228,7 @@
 				CEA0A3842863BAAA007EFBC9 /* AllProductsView.swift in Sources */,
 				CE246341285FC4D0000B7F66 /* NetworkManager.swift in Sources */,
 				CE07AB4F287DAD9000A59265 /* AllProductsViewModel.swift in Sources */,
-				CE246331285FBEFF000B7F66 /* StarterView.swift in Sources */,
+				CE246331285FBEFF000B7F66 /* SettingsView.swift in Sources */,
 				CE24633E285FBF66000B7F66 /* Maybelline.swift in Sources */,
 				CEB5164E286F34C9005DBD28 /* DetailsViewModel.swift in Sources */,
 				CEF339D9288440BD00406641 /* SplashScreen.swift in Sources */,
