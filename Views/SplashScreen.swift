@@ -22,7 +22,7 @@ struct SplashScreen: View {
             Group{
                 SplashShape()
                     .trim(from: 0, to: startAnimation ? 1 : 0)
-                    .stroke(Color.black, style: StrokeStyle(lineWidth: 20, lineCap: .round, lineJoin: .round))
+                    .stroke(Color.black, style: StrokeStyle(lineWidth: 3, lineCap: .round, lineJoin: .round))
                 
             }
             .frame(width: 300, height: 230)

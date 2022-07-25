@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct RowForProductView: View {
-    let viewModel: DetailsViewModel
+    
+    @StateObject var viewModel: DetailsViewModel
     
     var body: some View {
             
@@ -26,7 +27,7 @@ struct RowForProductView: View {
                     }
                         .offset(x: 120, y: -320)
                     
-//                    ShareButton(isShared: viewModel.shareButton, action: viewModel.favoriteButtonPressed)
+//                    ShareButton(isShared: viewModel.shareButton, action: viewModel)
 //                        .offset(x: 120, y: -170)
                     
                     VStack {

@@ -135,8 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				CE07AB4C287D61F200A59265 /* ProductImageView.swift */,
-				CE220CDB2870778400D25C8C /* RowForProductView.swift */,
 				CE54B749287EF9640097E7E5 /* RatingView.swift */,
+				CE220CDB2870778400D25C8C /* RowForProductView.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
